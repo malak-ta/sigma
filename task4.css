@@ -1,0 +1,828 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    direction: rtl;
+ }
+.main{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: auto;
+   width: 70%;
+   
+}
+
+.main  h1{
+    color :gray;
+}
+.main .logo{
+    width: 24%;
+    padding: 30px 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.main .navbar{
+    width: 65%;
+    padding: 30px 20px;
+    font-weight: bold;
+  }
+.sigma{
+    color:orange;
+}
+.star{
+    color:aqua;
+}
+.main .navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.main .navbar ul li{
+    margin-left: 5px;
+    padding: 10px;
+}
+.main .navbar ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    cursor: pointer;
+    color: gray;
+    transition: all 0.5s;
+    text-decoration: none;
+    
+}
+
+.main .navbar ul li a:hover {
+    color: blue;
+    
+}
+.main .navbar ul li .btn{
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+.main .navbar ul li .btn:hover{
+    color:whitesmoke;
+    background-color: blue;
+}
+.first_container{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+.first_container .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+}
+.first_container .content .animation_logo{
+    text-align: center;
+    width: 50%;
+}
+.first_container .content .animation_logo img { 
+    width: 100%;
+    animation-name: animation_logo_move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; /* تأكيد السلاسة */
+}
+
+@keyframes animation_logo_move {
+    0% {
+        transform: translateY(0); /* في البداية في الموقع الأصلي */
+    }
+    50% {
+        transform: translateY(50px); /* التحرك للأسفل */
+    }
+    100% {
+        transform: translateY(0); /* العودة إلى الموقع الأصلي */
+    }
+}
+
+
+.first_container .content .text{
+    width: 50%;
+}
+.first_container .content .text h1{
+    padding-top: 120px;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.first_container .content .text h2{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.first_container .content .text a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color:rgb(66, 182, 218);
+    box-shadow: 0px 2px 15px 1px rgba(0, 204, 0, 0.5);
+    padding: 12px 30px;
+    transition: 0.5s;
+    color: aliceblue;
+}
+.first_container .content .text a:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+.first_card .vision i{
+    color: dodgerblue;
+    font-size: 30px;
+    margin: 5px 5px 10px 0px;
+}
+.first_card{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: all 1s;
+    margin-bottom: 50px;
+}
+.first_card h2{
+    margin: 10px 0px;
+    color: dimgray;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 15%;
+}
+.first_card p{
+    font-size: 16px;
+    color: gray;
+    line-height: 150%;
+
+}
+.first_card .vision{
+    background-color: rgb(245, 245, 245);
+    width: 46%;
+    padding: 20px 20px 40px;
+}
+.first_card .vision:hover{
+    border: 0.5px solid black;
+}
+.first_card .why i{
+    color: dodgerblue;
+    font-size: 30px;
+    margin: 5px 5px 10px 0px;
+}
+.first_card .why{
+    background-color: rgb(245, 245, 245);
+    width: 46%;
+    padding: 20px 20px 40px;
+}
+.first_card .why:hover{
+    border: 0.5px solid black;
+}
+.second_card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.second_card .about_img{
+    width: 45%;
+}
+.second_card .about_img img{
+    width: 100%;
+}
+.second_card .about_us{
+    width: 45%;
+}
+.second_card .about_us h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: dimgrey;
+}
+.second_card .about_us p{
+    font-size:20px ;
+    color: dimgrey;
+    line-height: 150%;
+}
+.third_card{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.third_card .service{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.third_card .service h2{
+    margin-bottom: 20px;
+    color: gray;
+}
+.third_card .service p{
+    color: grey;
+}
+.third_card .parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    transition: all 0.5s;
+}
+.third_card .parent .child{
+    width: 20%;
+    padding: 30px 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}    
+.third_card .parent .child i{
+    color: dodgerblue;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.third_card .parent .child h2{
+    cursor: pointer;
+    width: auto;
+}
+.third_card .parent .child h2:hover{
+    color: dodgerblue;
+
+}
+.third_card .client{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.third_card .client h2{
+    margin-bottom: 20px;
+    color: gray;
+}
+.third_card .client p{
+    color: grey;
+}
+.forth_card{
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    display: flex;
+    background-color: aliceblue;
+    margin-top: 50px;
+}
+.forth_card .contact_us{
+    width: 100%;
+}
+.forth_card .contact_us h2{
+    margin-bottom: 20px;
+    color: gray;
+}
+.forth_card .contact_us p{
+    margin-bottom: 20px;
+    color: gray;
+}
+.forth_card .contact_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.forth_card .contact_details .location{
+    width: 40%;
+    background-color: rgb(245, 245, 245);
+    border-top: 5px solid rgb(66, 182, 218);
+    border-bottom: 5px solid rgb(66, 182, 218);
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.forth_card .contact_details .location .address,
+.forth_card .contact_details .location .email,
+.forth_card .contact_details .location .phone{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  margin-bottom: 30px;
+}
+.forth_card .contact_details .location .address i,
+.forth_card .contact_details .location .email i,
+.forth_card .contact_details .location .phone i{
+  width: 10%;
+  height: 35px;
+  padding-top: 15px;
+  color: rgb(66, 182, 218);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.forth_card .contact_details .location .address i:hover,
+.forth_card .contact_details .location .email i:hover,
+.forth_card .contact_details .location .phone i:hover{
+    color:white;
+    background-color: dodgerblue;
+}
+.forth_card .contact_details .location .address div,
+.forth_card .contact_details .location .email div,
+.forth_card .contact_details .location .phone div{
+  width: 90%;
+  text-align: right;
+}
+/* Main container for contact form */
+.forth_card .contact_details .contact_form {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-top: 5px solid rgb(66, 182, 218);
+    border-bottom: 5px solid rgb(66, 182, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form structure */
+.forth_card .contact_details .contact_form form {
+    width: 100%;
+}
+
+/* Flexbox for first section (name & email) */
+.forth_card .contact_details .contact_form form .first {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.forth_card .contact_details .contact_form form .first div {
+    width: 48%; /* Adjust width for space between inputs */
+    margin-bottom: 20px;
+}
+
+.forth_card .contact_details .contact_form form .first div label {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.forth_card .contact_details .contact_form form .first div input {
+    width: 100%;
+    line-height: 28px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Subject section */
+.forth_card .contact_details .contact_form form .second {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.forth_card .contact_details .contact_form form .second label {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.forth_card .contact_details .contact_form form .second input {
+    width: 100%;
+    line-height: 28px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Message section */
+.forth_card .contact_details .contact_form form .third {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.forth_card .contact_details .contact_form form .third label {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.forth_card .contact_details .contact_form form .third textarea {
+    width: 100%;
+    padding: 8px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button */
+.forth_card .contact_details .contact_form form button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(66, 182, 218);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.forth_card .contact_details .contact_form form button:hover {
+    background-color: rgb(46, 152, 193);
+}
+.fifth-card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 50px 20px 20px;
+}
+.fifth-card .page-name{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.fifth-card .page-name h2{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+.fifth-card .icons{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.fifth-card .icons i{
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    padding: 5px;
+    margin-left: 5px;
+    background-color: rgb(230, 230, 230);
+}
+.fifth-card .icons i:hover{
+    color: white ;
+     background-color: rgb(66, 182, 218) ;
+    cursor: pointer ;
+    transition: 0.5s ;
+}
+.fifth-card hr{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.fifth-card .copy-right {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(120, 120, 120);
+    justify-content: space-between;  /* Add space between the two sections */
+}
+
+.fifth-card .copy-right .creator {
+    width: 50%;
+    text-align: right;
+    font-size: 14px;
+}
+
+.fifth-card .copy-right .creator p a {
+    color: rgb(0, 189, 0);
+}
+
+.fifth-card .copy-right .creator p a:hover {
+    color: dodgerblue ;
+    cursor: pointer ;
+}
+
+.fifth-card .copy-right .copy-right2 {
+    width: 50%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.fifth-card .copy-right .copy-right2 span {
+    font-weight: bold;
+}
+/* ==== Media 1600px ==== */
+@media(max-width: 1600px) {
+    .main {
+      width: 80%;
+    }
+    .main .logo {
+      width: 22%;
+    }
+    .main .navbar {
+      width: 68%;
+    }
+    .first_container {
+      width: 75%;
+    }
+    .first_container .content .animation_logo {
+      width: 50%;
+    }
+    .first_container .content .text {
+      width: 50%;
+    }
+    .first_card {
+      flex-wrap: wrap;
+    }
+    .first_card h2 {
+      width: 30%;
+    }
+    .first_card .vision,
+    .first_card .why {
+      width: 45%;
+    }
+    .second_card .about_img,
+    .second_card .about_us {
+      width: 45%;
+    }
+    .third_card .parent .child {
+      width: 22%;
+    }
+    .forth_card .contact_details .location,
+    .forth_card .contact_details .contact_form {
+      width: 48%;
+    }
+  }
+  
+  /* ==== Media 1500px ==== */
+  @media(max-width: 1500px) {
+    .main {
+      width: 85%;
+    }
+    .main .logo {
+      width: 20%;
+    }
+    .main .navbar {
+      width: 75%;
+    }
+    .first_container {
+      width: 80%;
+    }
+    .first_container .content .animation_logo {
+      width: 45%;
+    }
+    .first_container .content .text {
+      width: 50%;
+    }
+    .first_card {
+      flex-wrap: wrap;
+    }
+    .first_card h2 {
+      width: 30%;
+    }
+    .first_card .vision,
+    .first_card .why {
+      width: 48%;
+    }
+    .second_card .about_img,
+    .second_card .about_us {
+      width: 48%;
+    }
+    .third_card .parent .child {
+      width: 22%;
+    }
+    .forth_card .contact_details .location,
+    .forth_card .contact_details .contact_form {
+      width: 48%;
+    }
+  }
+  
+  /* ==== Media 1250px ==== */
+  @media(max-width: 1250px) {
+    .main {
+      width: 90%;
+    }
+    .main .logo {
+      width: 18%;
+    }
+    .main .navbar {
+      width: 78%;
+    }
+    .first_container {
+      width: 85%;
+    }
+    .first_container .content .animation_logo {
+      width: 45%;
+    }
+    .first_container .content .text {
+      width: 50%;
+    }
+    .first_card {
+      flex-wrap: wrap;
+    }
+    .first_card h2 {
+      width: 45%;
+    }
+    .first_card .vision,
+    .first_card .why {
+      width: 45%;
+    }
+    .second_card .about_img,
+    .second_card .about_us {
+      width: 50%;
+    }
+    .third_card .parent .child {
+      width: 30%;
+    }
+    .forth_card .contact_details .location,
+    .forth_card .contact_details .contact_form {
+      width: 100%;
+    }
+  }
+  
+  /* ==== Media 1200px ==== */
+  @media(max-width: 1200px) {
+    .main {
+      width: 95%;
+    }
+    .main .logo {
+      width: 100%;
+      text-align: center;
+    }
+    .main .navbar {
+      width: 100%;
+      text-align: center;
+    }
+    .main .navbar ul li {
+      width: 33%;
+      padding: 10px;
+    }
+    .first_container .content .animation_logo {
+      width: 100%;
+    }
+    .first_container .content .text {
+      width: 100%;
+    }
+    .first_card {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .first_card h2 {
+      width: 100%;
+      text-align: center;
+    }
+    .first_card .vision,
+    .first_card .why {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .second_card .about_img,
+    .second_card .about_us {
+      width: 100%;
+    }
+    .third_card .parent .child {
+      width: 45%;
+    }
+    .forth_card .contact_details .location,
+    .forth_card .contact_details .contact_form {
+      width: 100%;
+    }
+  }
+  
+  /* ==== Media 950px ==== */
+  @media(max-width: 950px) {
+    .main {
+      width: 100%;
+    }
+    .main .logo {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    .main .navbar {
+      width: 100%;
+      text-align: center;
+    }
+    .main .navbar ul li {
+      width: 40%;
+      padding: 10px 0;
+      margin-bottom: 10px;
+    }
+    .first_container .content .animation_logo {
+      width: 100%;
+    }
+    .first_container .content .text {
+      width: 100%;
+      text-align: center;
+    }
+    .first_card {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .first_card h2 {
+      width: 100%;
+    }
+    .first_card .vision,
+    .first_card .why {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .second_card .about_img,
+    .second_card .about_us {
+      width: 100%;
+    }
+    .third_card .parent .child {
+      width: 45%;
+    }
+    .forth_card .contact_details .location,
+    .forth_card .contact_details .contact_form {
+      width: 100%;
+    }
+  }
+  
+  /* ==== Media 750px ==== */
+  @media(max-width: 750px) {
+    .main .navbar ul li {
+      width: 50%;
+      padding: 10px 0;
+    }
+    .first_container .content .animation_logo img {
+      width: 100%;
+    }
+    .first_container .content .text h1 {
+      font-size: 30px;
+    }
+    .first_card h2 {
+      font-size: 18px;
+      text-align: center;
+    }
+    .first_card .vision,
+    .first_card .why {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .second_card .about_img,
+    .second_card .about_us {
+      width: 100%;
+    }
+    .third_card .parent .child {
+      width: 45%;
+    }
+    .forth_card .contact_details .location,
+    .forth_card .contact_details .contact_form {
+      width: 100%;
+    }
+  }
+  
+  /* ==== Media 600px ==== */
+  @media(max-width: 600px) {
+    .main {
+      width: 98%;
+    }
+    .main .navbar ul li {
+      width: 100%;
+      padding: 10px 0;
+    }
+    .first_container .content .animation_logo img {
+      width: 100%;
+    }
+    .first_container .content .text h1 {
+      font-size: 24px;
+    }
+    .first_card h2 {
+      font-size: 16px;
+    }
+    .first_card .vision,
+    .first_card .why {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .second_card .about_img,
+    .second_card .about_us {
+      width: 100%;
+    }
+    .third_card .parent .child {
+      width: 45%;
+    }
+    .forth_card .contact_details .location,
+    .forth_card .contact_details .contact_form {
+      width: 100%;
+    }
+  }
+  
+  /* ==== Media 500px ==== */
+  @media(max-width: 500px) {
+    .forth_card .contact_details .location .address div,
+    .forth_card .contact_details .location .email div,
+    .forth_card .contact_details .location .phone div {
+      width: 85%;
+    }
+  }
+  
+  /* ==== Media 350px ==== */
+  @media(max-width: 350px) {
+    .forth_card .contact_details .location .address div,
+    .forth_card .contact_details .location .email div,
+    .forth_card .contact_details .location .phone div {
+      width: 80%;
+    }
+  }
+  
